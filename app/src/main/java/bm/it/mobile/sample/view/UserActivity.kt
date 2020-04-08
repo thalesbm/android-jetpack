@@ -17,7 +17,7 @@ class UserActivity : AppCompatActivity() {
     }
 
     private fun createFragment(): UserFragment {
-        return UserFragment.newInstance(UserViewModel(UserRepository()))
+        return UserFragment()
     }
 
     private fun addFragmentTo(
