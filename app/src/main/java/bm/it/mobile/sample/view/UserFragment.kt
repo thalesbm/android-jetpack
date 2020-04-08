@@ -17,8 +17,6 @@ class UserFragment : Fragment() {
 
     lateinit var viewModel: UserViewModel
 
-    private val model = MutableLiveData<UserModel>()
-
     companion object {
         fun newInstance(viewModel: UserViewModel): UserFragment {
             val fragment = UserFragment()
@@ -38,10 +36,8 @@ class UserFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        getModel().observe(this, Observer {
-            textview.apply {
-                text = it.name
-            }
+        viewModel.getModelUpperCase().observe(this, Observer { userModel ->
+            textview.text = userModel.name
         })
 
         button.setOnClickListener {
@@ -49,7 +45,4 @@ class UserFragment : Fragment() {
         }
     }
 
-    private fun getModel(): LiveData<UserModel> {
-        return model
-    }
 }

@@ -1,3 +1,3 @@
 package bm.it.mobile.sample.model
 
-class UserModel(val name: String)
+class UserModel(var name: String)
