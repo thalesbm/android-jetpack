@@ -5,17 +5,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import bm.it.mobile.sample.R
-import bm.it.mobile.sample.model.UserModel
 import bm.it.mobile.sample.viewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_user.*
 
 class UserFragment : Fragment() {
 
-    lateinit var viewModel: UserViewModel
+    private lateinit var adapter: UserAdapter
+    private lateinit var viewModel: UserViewModel
 
     companion object {
         fun newInstance(viewModel: UserViewModel): UserFragment {
@@ -36,13 +34,23 @@ class UserFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.getModelUpperCase().observe(this, Observer { userModel ->
-            textview.text = userModel.name
-        })
+        init()
+        setObserves()
+    }
 
+    private fun init() {
         button.setOnClickListener {
             viewModel.validate(edittext.text.toString())
         }
+
+        adapter = UserAdapter()
+        recyclerview.adapter = adapter
     }
 
+    private fun setObserves() {
+        viewModel.getModelUpperCase().observe(this, Observer { list ->
+            adapter.updateList(list)
+            edittext.text.clear()
+        })
+    }
 }
