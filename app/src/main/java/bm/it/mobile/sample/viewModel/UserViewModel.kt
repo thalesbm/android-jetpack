@@ -17,8 +17,7 @@ class UserViewModel(private val repository: UserRepository) {
     fun validate(name: String) {
         if (name.isNotEmpty()) {
             val model = UserModel(name)
-            val list = repository.fetchUser(model)
-            modelObservable.value = mutableListOf(list)
+            modelObservable.value = repository.fetchUser(model)
         }
     }
 }

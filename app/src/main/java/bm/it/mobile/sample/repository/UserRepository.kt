@@ -5,8 +5,11 @@ import java.util.*
 
 class UserRepository: IUserRepository {
 
-    override fun fetchUser(model: UserModel): UserModel {
+    private var list = mutableListOf<UserModel>()
+
+    override fun fetchUser(model: UserModel): List<UserModel> {
         model.name = model.name.toUpperCase(Locale.US)
-        return model
+        list.add(model)
+        return list
     }
 }

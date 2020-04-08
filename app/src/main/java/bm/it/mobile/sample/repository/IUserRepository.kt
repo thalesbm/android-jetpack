@@ -4,6 +4,6 @@ import bm.it.mobile.sample.model.UserModel
 
 interface IUserRepository {
 
-    fun fetchUser(model: UserModel): UserModel
+    fun fetchUser(model: UserModel): List<UserModel>
 
 }
