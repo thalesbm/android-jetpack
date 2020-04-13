@@ -23,9 +23,9 @@ class UserViewModel(private val repository: UserRepository): ViewModel() {
         }
     }
 
-    class UserViewModelProvider(private val repository: UserRepository): ViewModelProvider.Factory {
-        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return UserViewModel(repository) as T
-        }
-    }
+//    class UserViewModelProvider(private val repository: UserRepository): ViewModelProvider.Factory {
+//        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+//            return UserViewModel(repository) as T
+//        }
+//    }
 }

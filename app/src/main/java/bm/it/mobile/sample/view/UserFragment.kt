@@ -11,11 +11,13 @@ import bm.it.mobile.sample.R
 import bm.it.mobile.sample.repository.UserRepository
 import bm.it.mobile.sample.viewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_user.*
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class UserFragment : Fragment() {
 
     private lateinit var adapter: UserAdapter
-    private lateinit var viewModel: UserViewModel
+    // private lateinit var viewModel: UserViewModel
+    private val viewModel by viewModel<UserViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -33,9 +35,8 @@ class UserFragment : Fragment() {
     }
 
     private fun init() {
-
-        viewModel = ViewModelProvider(this,
-            UserViewModel.UserViewModelProvider(UserRepository())).get(UserViewModel::class.java)
+//        viewModel = ViewModelProvider(this,
+//            UserViewModel.UserViewModelProvider(UserRepository())).get(UserViewModel::class.java)
 
         button.setOnClickListener {
             viewModel.validate(edittext.text.toString())
