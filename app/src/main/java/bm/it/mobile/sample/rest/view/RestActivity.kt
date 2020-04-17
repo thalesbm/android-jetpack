@@ -1,16 +1,11 @@
 package bm.it.mobile.sample.rest.view
 
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import bm.it.mobile.sample.R
-import bm.it.mobile.sample.rest.GetDataService
-import bm.it.mobile.sample.rest.RetrofitClientInstance
-import bm.it.mobile.sample.rest.model.RestModel
+import bm.it.mobile.sample.rest.repository.RestRepository
+import bm.it.mobile.sample.rest.viewModel.RestViewModel
 import kotlinx.android.synthetic.main.activity_rest.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 
 class RestActivity : AppCompatActivity() {
 
@@ -19,25 +14,12 @@ class RestActivity : AppCompatActivity() {
         setContentView(R.layout.activity_rest)
 
         button3.setOnClickListener {
-
+            callRest()
         }
-        val service: GetDataService? =
-            RetrofitClientInstance.getRetrofitInstance()?.create(GetDataService::class.java)
-        val call: Call<RestModel>? = service?.getAllPhotos()
-
-        call?.enqueue(object : Callback<RestModel> {
-            override fun onResponse(
-                call: Call<RestModel>,
-                response: Response<RestModel>
-            ) {
-                Log.e("THALES", "success")
-            }
-
-            override fun onFailure(call: Call<RestModel>, t: Throwable) {
-                Log.e("THALES", "failure")
-            }
-        });
     }
 
-
+    private fun callRest() {
+        val viewModel = RestViewModel(RestRepository())
+        viewModel.callRepository()
+    }
 }
