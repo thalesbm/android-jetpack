@@ -19,8 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".user.view.UserActivity" />
-        <activity android:name=".rest.view.RestActivity" />
+        <activity
+            android:name=".user.view.UserActivity"
+            android:label="@string/button1" />
+        <activity
+            android:name=".rest.view.RestActivity"
+            android:label="@string/button2" />
+        <activity
+            android:name=".courotines.view.CoroutinesActivity"
+            android:label="@string/button4" />
     </application>
 
 </manifest>

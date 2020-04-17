@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">SampleStudies</string>
+
+    <string name="text1">The button below goes to the user package (bm.it.mobile.sample.user),
+you can see a simple sample that uses LiveData with Coin and MVVM architecture</string>
+    <string name="button1">KOIN + LIVE DATA</string>
+
+    <string name="text2">The button below goes to the rest package (bm.it.mobile.sample.rest),
+you can see a simple sample that uses Retrofit, Coroutines, LiveData and MVVM architecture</string>
+    <string name="button2">(DOING) RETROFIT + COROUTINES + LIVE DATA</string>
+
+    <string name="text3">The button below goes to the room package (bm.it.mobile.sample.room),
+you can see a simple sample that uses ROOM, Coroutines, LiveData and MVVM architecture</string>
+    <string name="button3">(TO DO) ROOM + COROUTINES + LIVE DATA</string>
+
+    <string name="text4">The button below goes to the coroutines package (bm.it.mobile.sample.coroutines),
+you can see a simple sample that uses Coroutines, LiveData and MVVM architecture</string>
+    <string name="button4">(DOING) COROUTINES + LIVE DATA</string>
 </resources>
