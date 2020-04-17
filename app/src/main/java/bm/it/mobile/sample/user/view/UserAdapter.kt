@@ -1,11 +1,11 @@
-package bm.it.mobile.sample.view
+package bm.it.mobile.sample.user.view
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import bm.it.mobile.sample.R
-import bm.it.mobile.sample.model.UserModel
+import bm.it.mobile.sample.user.model.UserModel
 import kotlinx.android.synthetic.main.adapter_user.view.*
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolder>() {

@@ -1,11 +1,9 @@
-package bm.it.mobile.sample.view
+package bm.it.mobile.sample.user.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import bm.it.mobile.sample.R
-import bm.it.mobile.sample.repository.UserRepository
-import bm.it.mobile.sample.viewModel.UserViewModel
 
 class UserActivity : AppCompatActivity() {
 
