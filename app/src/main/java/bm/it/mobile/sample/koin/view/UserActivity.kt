@@ -9,7 +9,7 @@ class UserActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_user)
+        setContentView(R.layout.activity_koin)
 
         addFragmentTo(R.id.content_frame, createFragment())
     }

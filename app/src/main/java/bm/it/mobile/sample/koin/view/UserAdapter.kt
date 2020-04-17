@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import bm.it.mobile.sample.R
 import bm.it.mobile.sample.koin.model.UserModel
-import kotlinx.android.synthetic.main.adapter_user.view.*
+import kotlinx.android.synthetic.main.adapter_koin.view.*
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolder>() {
 
@@ -15,7 +15,7 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_user, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_koin, parent, false)
         return ViewHolder(view)
     }
 

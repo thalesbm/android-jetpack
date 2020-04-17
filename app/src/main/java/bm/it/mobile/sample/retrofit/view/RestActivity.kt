@@ -6,7 +6,7 @@ import androidx.lifecycle.Observer
 import bm.it.mobile.sample.R
 import bm.it.mobile.sample.retrofit.repository.RestRepository
 import bm.it.mobile.sample.retrofit.viewModel.RestViewModel
-import kotlinx.android.synthetic.main.activity_rest.*
+import kotlinx.android.synthetic.main.activity_retrofit.*
 
 class RestActivity : AppCompatActivity() {
 
@@ -14,7 +14,7 @@ class RestActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_rest)
+        setContentView(R.layout.activity_retrofit)
 
         button3.setOnClickListener {
             callRest()

@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import bm.it.mobile.sample.R
 import bm.it.mobile.sample.koin.viewModel.UserViewModel
-import kotlinx.android.synthetic.main.fragment_user.*
+import kotlinx.android.synthetic.main.fragment_koin.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class UserFragment : Fragment() {
@@ -21,7 +21,7 @@ class UserFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_user, container, false)
+        return inflater.inflate(R.layout.fragment_koin, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
