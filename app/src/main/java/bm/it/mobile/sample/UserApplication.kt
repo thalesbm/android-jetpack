@@ -1,7 +1,7 @@
 package bm.it.mobile.sample
 
 import android.app.Application
-import bm.it.mobile.sample.user.di.appModules
+import bm.it.mobile.sample.koin.di.appModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 

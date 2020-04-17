@@ -1,9 +1,9 @@
-package bm.it.mobile.sample.user.viewModel
+package bm.it.mobile.sample.koin.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import bm.it.mobile.sample.user.model.UserModel
-import bm.it.mobile.sample.user.repository.IUserRepository
+import bm.it.mobile.sample.koin.model.UserModel
+import bm.it.mobile.sample.koin.repository.IUserRepository
 
 class UserViewModel(private val repository: IUserRepository): ViewModel() {
 

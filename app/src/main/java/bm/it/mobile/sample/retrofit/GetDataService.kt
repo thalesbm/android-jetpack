@@ -1,6 +1,6 @@
-package bm.it.mobile.sample.rest
+package bm.it.mobile.sample.retrofit
 
-import bm.it.mobile.sample.rest.model.RestModel
+import bm.it.mobile.sample.retrofit.model.RestModel
 import retrofit2.Call
 import retrofit2.http.GET
 

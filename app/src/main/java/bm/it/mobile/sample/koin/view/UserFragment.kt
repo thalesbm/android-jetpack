@@ -1,4 +1,4 @@
-package bm.it.mobile.sample.user.view
+package bm.it.mobile.sample.koin.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import bm.it.mobile.sample.R
-import bm.it.mobile.sample.user.viewModel.UserViewModel
+import bm.it.mobile.sample.koin.viewModel.UserViewModel
 import kotlinx.android.synthetic.main.fragment_user.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 

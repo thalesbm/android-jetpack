@@ -1,4 +1,4 @@
-package bm.it.mobile.sample.rest
+package bm.it.mobile.sample.retrofit
 
 interface CustomRetrofitCallback<T> {
 

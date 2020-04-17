@@ -1,4 +1,4 @@
-package bm.it.mobile.sample.rest.model
+package bm.it.mobile.sample.retrofit.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

@@ -1,4 +1,4 @@
-package bm.it.mobile.sample.user.view
+package bm.it.mobile.sample.koin.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

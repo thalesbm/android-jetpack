@@ -1,9 +1,9 @@
-package bm.it.mobile.sample.rest.repository
+package bm.it.mobile.sample.retrofit.repository
 
-import bm.it.mobile.sample.rest.CustomRetrofitCallback
-import bm.it.mobile.sample.rest.GetDataService
-import bm.it.mobile.sample.rest.RetrofitClientInstance
-import bm.it.mobile.sample.rest.model.RestModel
+import bm.it.mobile.sample.retrofit.CustomRetrofitCallback
+import bm.it.mobile.sample.retrofit.GetDataService
+import bm.it.mobile.sample.retrofit.RetrofitClientInstance
+import bm.it.mobile.sample.retrofit.model.RestModel
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

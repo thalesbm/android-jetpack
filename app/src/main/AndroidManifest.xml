@@ -20,10 +20,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".user.view.UserActivity"
+            android:name=".koin.view.UserActivity"
             android:label="@string/button1" />
         <activity
-            android:name=".rest.view.RestActivity"
+            android:name=".retrofit.view.RestActivity"
             android:label="@string/button2" />
         <activity
             android:name=".courotines.view.CoroutinesActivity"

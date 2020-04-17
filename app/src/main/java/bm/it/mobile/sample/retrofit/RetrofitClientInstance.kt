@@ -1,4 +1,4 @@
-package bm.it.mobile.sample.rest
+package bm.it.mobile.sample.retrofit
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

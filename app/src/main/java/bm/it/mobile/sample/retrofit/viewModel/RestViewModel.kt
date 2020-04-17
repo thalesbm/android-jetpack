@@ -1,10 +1,10 @@
-package bm.it.mobile.sample.rest.viewModel
+package bm.it.mobile.sample.retrofit.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import bm.it.mobile.sample.rest.CustomRetrofitCallback
-import bm.it.mobile.sample.rest.model.RestModel
-import bm.it.mobile.sample.rest.repository.RestRepository
+import bm.it.mobile.sample.retrofit.CustomRetrofitCallback
+import bm.it.mobile.sample.retrofit.model.RestModel
+import bm.it.mobile.sample.retrofit.repository.RestRepository
 
 class RestViewModel(private val repository: RestRepository) : ViewModel() {
 

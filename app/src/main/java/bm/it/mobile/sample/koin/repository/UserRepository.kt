@@ -1,6 +1,6 @@
-package bm.it.mobile.sample.user.repository
+package bm.it.mobile.sample.koin.repository
 
-import bm.it.mobile.sample.user.model.UserModel
+import bm.it.mobile.sample.koin.model.UserModel
 import java.util.*
 
 class UserRepository: IUserRepository {

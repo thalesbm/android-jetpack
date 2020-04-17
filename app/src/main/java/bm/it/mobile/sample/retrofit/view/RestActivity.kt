@@ -1,13 +1,12 @@
-package bm.it.mobile.sample.rest.view
+package bm.it.mobile.sample.retrofit.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import bm.it.mobile.sample.R
-import bm.it.mobile.sample.rest.repository.RestRepository
-import bm.it.mobile.sample.rest.viewModel.RestViewModel
+import bm.it.mobile.sample.retrofit.repository.RestRepository
+import bm.it.mobile.sample.retrofit.viewModel.RestViewModel
 import kotlinx.android.synthetic.main.activity_rest.*
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class RestActivity : AppCompatActivity() {
 
