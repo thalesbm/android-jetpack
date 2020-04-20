@@ -7,8 +7,11 @@ import bm.it.mobile.sample.R
 import bm.it.mobile.sample.courotines.repository.CoroutinesRepository
 import bm.it.mobile.sample.courotines.viewModel.CoroutinesViewModel
 import kotlinx.android.synthetic.main.activity_coroutine.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers.Default
+import kotlinx.coroutines.launch
 
-class CoroutinesActivity: AppCompatActivity() {
+class CoroutinesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,14 +23,17 @@ class CoroutinesActivity: AppCompatActivity() {
             count.text = item.toString()
         })
 
-        viewModel.count()
+        CoroutineScope(Default).launch {
+            println(Thread.currentThread().name)
+            viewModel.count()
+        }
 
         this.initToolbar()
     }
 
     private fun initToolbar() {
         val actionbar = supportActionBar
-        actionbar?.let{
+        actionbar?.let {
             actionbar.setDisplayHomeAsUpEnabled(true)
             actionbar.setDisplayHomeAsUpEnabled(true)
         }

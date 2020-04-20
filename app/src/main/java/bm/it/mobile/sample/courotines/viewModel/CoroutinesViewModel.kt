@@ -13,10 +13,10 @@ class CoroutinesViewModel(private val repository: CoroutinesRepository) {
         return observable
     }
 
-    fun count() {
+    suspend fun count() {
         for (x in 0..5) {
             val number = repository.getNumber(x)
-            observable.value = number
+            observable.postValue(number)
         }
     }
 }
