@@ -1,8 +1,8 @@
 package bm.it.mobile.sample.courotines.view
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import bm.it.mobile.sample.BaseActivity
 import bm.it.mobile.sample.R
 import bm.it.mobile.sample.courotines.repository.CoroutinesRepository
 import bm.it.mobile.sample.courotines.viewModel.CoroutinesViewModel
@@ -11,7 +11,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.Default
 import kotlinx.coroutines.launch
 
-class CoroutinesActivity : AppCompatActivity() {
+class CoroutinesActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,20 +27,5 @@ class CoroutinesActivity : AppCompatActivity() {
             println(Thread.currentThread().name)
             viewModel.count()
         }
-
-        this.initToolbar()
-    }
-
-    private fun initToolbar() {
-        val actionbar = supportActionBar
-        actionbar?.let {
-            actionbar.setDisplayHomeAsUpEnabled(true)
-            actionbar.setDisplayHomeAsUpEnabled(true)
-        }
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
     }
 }

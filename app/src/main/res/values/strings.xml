@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Samples</string>
+    <string name="app_name">Android Jetpack</string>
 
     <string name="text1">Simple sample that uses LiveData + Coin + MVVM architecture</string>
     <string name="button1">KOIN + LIVE DATA</string>

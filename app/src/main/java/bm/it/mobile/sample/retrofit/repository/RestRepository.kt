@@ -13,7 +13,7 @@ class RestRepository {
     fun callRest(callback: CustomRetrofitCallback<RestModel>) {
         val service: GetDataService? =
             RetrofitClientInstance.getRetrofitInstance()?.create(GetDataService::class.java)
-        val call: Call<RestModel>? = service?.getAllPhotos()
+        val call: Call<RestModel>? = service?.getUser()
 
         call?.enqueue(object : Callback<RestModel> {
             override fun onResponse(
