@@ -2,7 +2,7 @@ package bm.it.mobile.sample.features.koin.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import bm.it.mobile.sample.BaseActivity
+import bm.it.mobile.sample.commons.BaseActivity
 import bm.it.mobile.sample.R
 
 class UserActivity : BaseActivity() {

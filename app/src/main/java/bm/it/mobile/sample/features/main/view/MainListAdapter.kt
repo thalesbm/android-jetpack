@@ -1,13 +1,16 @@
-package bm.it.mobile.sample
+package bm.it.mobile.sample.features.main.view
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import bm.it.mobile.sample.R
+import bm.it.mobile.sample.features.main.model.Features
 import kotlinx.android.synthetic.main.adapter_main.view.*
 
 class MainListAdapter(private val list: List<Features>,
-                      private val callback: MainAdapterCallback) : RecyclerView.Adapter<MainListAdapter.ViewHolder>() {
+                      private val callback: MainAdapterCallback
+) : RecyclerView.Adapter<MainListAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.adapter_main, parent, false)

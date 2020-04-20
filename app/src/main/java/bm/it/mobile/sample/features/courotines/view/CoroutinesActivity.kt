@@ -2,7 +2,7 @@ package bm.it.mobile.sample.features.courotines.view
 
 import android.os.Bundle
 import androidx.lifecycle.Observer
-import bm.it.mobile.sample.BaseActivity
+import bm.it.mobile.sample.commons.BaseActivity
 import bm.it.mobile.sample.R
 import bm.it.mobile.sample.features.courotines.repository.CoroutinesRepository
 import bm.it.mobile.sample.features.courotines.viewModel.CoroutinesViewModel

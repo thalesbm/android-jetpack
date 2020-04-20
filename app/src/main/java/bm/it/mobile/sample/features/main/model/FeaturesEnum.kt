@@ -1,4 +1,4 @@
-package bm.it.mobile.sample
+package bm.it.mobile.sample.features.main.model
 
 enum class FeaturesEnum(val code: Int) {
     LIVEDATA_KOIN(1),

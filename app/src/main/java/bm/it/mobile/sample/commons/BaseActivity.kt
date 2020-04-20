@@ -1,4 +1,4 @@
-package bm.it.mobile.sample
+package bm.it.mobile.sample.commons
 
 import androidx.appcompat.app.AppCompatActivity
 
