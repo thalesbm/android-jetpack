@@ -24,10 +24,10 @@
             android:label="@string/button1" />
         <activity
             android:name="bm.it.mobile.sample.features.retrofit.view.RestActivity"
-            android:label="@string/button2" />
+            android:label="@string/button4" />
         <activity
             android:name="bm.it.mobile.sample.features.courotines.view.CoroutinesActivity"
-            android:label="@string/button4" />
+            android:label="@string/button2" />
     </application>
 
 </manifest>

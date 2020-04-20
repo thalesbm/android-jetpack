@@ -1,15 +1,17 @@
 <resources>
     <string name="app_name">Android Jetpack</string>
 
-    <string name="text1">Simple sample that uses LiveData + Coin + MVVM architecture</string>
-    <string name="button1">KOIN + LIVE DATA</string>
+    <string name="text1">Simple sample that uses Live Data, Coin and MVVM architecture</string>
+    <string name="button1">LIVE DATA + KOIN</string>
 
-    <string name="text2">Simple sample that uses Retrofit + Coroutines + LiveData + MVVM architecture</string>
-    <string name="button2">(DOING) RETROFIT + COROUTINES + LIVE DATA</string>
+    <string name="text2">Simple sample that uses Coroutines, Live Data and MVVM architecture</string>
+    <string name="button2">LIVE DATA + COROUTINES</string>
 
-    <string name="text3">Simple sample that uses ROOM + Coroutines + LiveData + MVVM architecture</string>
-    <string name="button3">(TO DO) ROOM + COROUTINES + LIVE DATA</string>
+    <string name="text3">Simple sample that uses ROOM, Coroutines, Live Data and MVVM architecture</string>
+    <string name="button3">LIVE DATA + COROUTINES + ROOM</string>
 
-    <string name="text4">Simple sample that uses Coroutines + LiveData + MVVM architecture</string>
-    <string name="button4">COROUTINES + LIVE DATA</string>
+    <string name="text4">Simple sample that uses Retrofit, Coroutines, Live Data and MVVM architecture</string>
+    <string name="button4">LIVE DATA + COROUTINES + RETROFIT</string>
+
+
 </resources>
