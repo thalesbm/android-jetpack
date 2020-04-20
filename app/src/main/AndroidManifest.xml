@@ -20,13 +20,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".koin.view.UserActivity"
+            android:name="bm.it.mobile.sample.features.koin.view.UserActivity"
             android:label="@string/button1" />
         <activity
-            android:name=".retrofit.view.RestActivity"
+            android:name="bm.it.mobile.sample.features.retrofit.view.RestActivity"
             android:label="@string/button2" />
         <activity
-            android:name=".courotines.view.CoroutinesActivity"
+            android:name="bm.it.mobile.sample.features.courotines.view.CoroutinesActivity"
             android:label="@string/button4" />
     </application>
 
