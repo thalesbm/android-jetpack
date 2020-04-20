@@ -21,5 +21,20 @@ class CoroutinesActivity: AppCompatActivity() {
         })
 
         viewModel.count()
+
+        this.initToolbar()
+    }
+
+    private fun initToolbar() {
+        val actionbar = supportActionBar
+        actionbar?.let{
+            actionbar.setDisplayHomeAsUpEnabled(true)
+            actionbar.setDisplayHomeAsUpEnabled(true)
+        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

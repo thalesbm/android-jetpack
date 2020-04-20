@@ -1,8 +1,16 @@
 package bm.it.mobile.sample.courotines.repository
 
+import kotlinx.coroutines.*
+
 class CoroutinesRepository {
 
-    fun getNumber(): Int {
-        return 1
+    private val parentJob = Job()
+    private val coroutineScope = CoroutineScope(Dispatchers.Main + parentJob)
+
+    fun getNumber(number: Int): Int {
+        coroutineScope.launch {
+            delay(4_000)
+        }
+        return number
     }
 }

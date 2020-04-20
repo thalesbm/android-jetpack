@@ -12,6 +12,8 @@ class UserActivity : AppCompatActivity() {
         setContentView(R.layout.activity_koin)
 
         addFragmentTo(R.id.content_frame, createFragment())
+
+        initToolbar()
     }
 
     private fun createFragment(): UserFragment {
@@ -24,5 +26,18 @@ class UserActivity : AppCompatActivity() {
         tag: String = ""
     ) {
         supportFragmentManager.beginTransaction().add(containerId, fragment, tag).commit()
+    }
+
+    private fun initToolbar() {
+        val actionbar = supportActionBar
+        actionbar?.let{
+            actionbar.setDisplayHomeAsUpEnabled(true)
+            actionbar.setDisplayHomeAsUpEnabled(true)
+        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

@@ -27,9 +27,24 @@ class RestActivity : AppCompatActivity() {
         viewModel.getCustomStringObservable().observe(this, Observer { item ->
             response.text = item
         })
+
+        initToolbar()
     }
 
     private fun callRest() {
         viewModel.callRepository()
+    }
+
+    private fun initToolbar() {
+        val actionbar = supportActionBar
+        actionbar?.let{
+            actionbar.setDisplayHomeAsUpEnabled(true)
+            actionbar.setDisplayHomeAsUpEnabled(true)
+        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }
