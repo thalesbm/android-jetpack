@@ -3,7 +3,7 @@ package bm.it.mobile.sample.features.retrofit
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitClientInstance  {
+class RetrofitClientInstance {
 
     companion object {
 
@@ -12,7 +12,7 @@ class RetrofitClientInstance  {
 
         fun getRetrofitInstance(): Retrofit? {
             if (retrofit == null) {
-                retrofit = Retrofit.Builder()
+                return Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
